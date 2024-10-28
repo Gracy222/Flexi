@@ -34,8 +34,9 @@ const styles = StyleSheet.create({
 
   title: {
     fontSize: 32,
-    fontWeight: "semibold",
+    fontWeight: "bold",
     marginVertical: 20,
+    color: "#1877F9",
   },
   container: {
     flex: 1,
