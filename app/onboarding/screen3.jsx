@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import Skip from "../../components/Skip";
 import { router } from "expo-router";
 import {
   StyleSheet,
@@ -9,32 +10,32 @@ import {
   ScrollView,
 } from "react-native";
 
-const Screen1 = () => {
+const Screen3 = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
+        <View style={styles.skipView}>
+          <Skip />
+        </View>
         <View style={styles.section}>
           <Image
             style={styles.image}
-            source={require("../../assets/images/people-head.png")}
+            source={require("../../assets/images/obimage2.png")}
           />
           <View style={styles.textDiv}>
-            <Text style={styles.title}>
-              Welcome to FlexiCare!
-              <Image
-                style={styles.wave}
-                source={require("../../assets/images/wave.png")}
-              />
+            <Text style={styles.titleh2}>
+              Schedule appointments with expert doctors
             </Text>
           </View>
 
           <Text style={styles.ptext}>
-            Schedule your eye health today, wherever you are!
+            Find experienced specialist doctors with expert ratings and reviews
+            and book your appointment hassle-free.
           </Text>
         </View>
         <Button
-          title="Continue"
-          handlePress={() => router.push("/onboarding/screen2")}
+          title="Next"
+          handlePress={() => router.push("/onboarding/screen4")}
         />
       </ScrollView>
     </SafeAreaView>
@@ -46,11 +47,15 @@ const styles = StyleSheet.create({
     width: 183,
     display: "flex",
     flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
   },
   ptext: {
-    width: 225,
+    width: 308,
+    height: 105,
     textAlign: "center",
     fontSize: 14,
+    lineHeight: 20,
   },
   container: {
     flex: 1,
@@ -62,12 +67,15 @@ const styles = StyleSheet.create({
     height: "80%",
   },
 
-  title: {
-    fontSize: 30,
+  titleh2: {
+    width: 273,
+
+    fontSize: 24,
     fontWeight: "bold",
     marginVertical: 20,
-    color: "#1877F9",
+    color: "black",
     textAlign: "center",
+    lineHeight: 35,
   },
 
   scrollView: {
@@ -77,15 +85,20 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    height: 300,
+    height: 305,
     resizeMode: "contain",
-    marginBottom: 70,
+    marginBottom: 40,
   },
   wave: {
     width: 24,
     height: 32,
     resizeMode: "contain",
   },
+  skipView: {
+    width: "80%",
+    display: "flex",
+    alignItems: "flex-end",
+  },
 });
 
-export default Screen1;
+export default Screen3;
