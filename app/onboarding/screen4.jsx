@@ -37,6 +37,10 @@ const Screen4 = () => {
           title="Get Started"
           handlePress={() => router.push("../auth/authScreen")}
         />
+         <Button
+          title="Grace Get Started"
+          handlePress={() => router.push("../resetpassword/screen13")}
+        />
       </ScrollView>
     </SafeAreaView>
   );
