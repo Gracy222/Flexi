@@ -1,8 +1,8 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, Image } from "react-native";
 
-const Button = ({ title, handlePress }) => {
+const Button = ({ title, handlePress, Image }) => {
   return (
     <TouchableOpacity
       onPress={handlePress}
