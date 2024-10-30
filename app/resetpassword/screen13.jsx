@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     header: {
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 20,
+        marginBottom: 21,
     },
     subHeader: {
         fontSize: 16,
