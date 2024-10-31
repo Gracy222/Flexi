@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "flexi",
     "name": "Flexi",
     "slug": "Flexi",
     "version": "1.0.0",

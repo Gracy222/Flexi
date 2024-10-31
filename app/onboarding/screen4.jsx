@@ -35,7 +35,7 @@ const Screen4 = () => {
         </View>
         <Button
           title="Get Started"
-          handlePress={() => router.push("../auth/authScreen")}
+          handlePress={() => router.push("../authentication/authScreen")}
         />
       </ScrollView>
     </SafeAreaView>

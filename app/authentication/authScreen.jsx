@@ -43,7 +43,9 @@ const AuthScreen = () => {
         </View>
         <View style={styles.signUpDiv}>
           <Text>Don't have an account?</Text>
-          <TouchableOpacity onPress={router.push("../auth/signup/signup")}>
+          <TouchableOpacity
+            onPress={() => router.push("../authentication/signup/signupScreen")}
+          >
             <Text style={styles.signUpText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
